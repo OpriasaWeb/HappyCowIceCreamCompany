@@ -1,14 +1,46 @@
+<!-- Instruction: The Happy Cow Ice Cream Company manufactures several types of ice cream. Design a flowchart or psuedocode for a program that accepts an ice cream flavor, price per gallon, and number of gallons sold in the average year. Display message that indicates whether the ice cream is a bestseller, which defined as a flavor that sells more than 40,000 gallons per year. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <title>Happy Cow Ice Cream Company</title>
 </head>
 <body>
   
+  <div class="container pt-5">
+    <p class="fs-4 mb-4">Happy Cow Ice Cream Company</p>
+    <div class="row">
+      <div class="col-12">
+        <label for="flavor" class="form-label">Ice cream flavor</label>
+        <input class="form-control mt-2" type="text" id="flavor"  aria-label="default input example">
+        <label for="price" class="form-label">Price per gallon</label>
+        <input class="form-control mt-2" type="text" id="price" aria-label="default input example">
+        <label for="number" class="form-label">Number of gallons</label>
+        <input class="form-control mt-2" type="text" id="number"  aria-label="default input example">
+        <button type="button" id="check" class="btn btn-primary mt-2">Check</button>
+
+        <div class="result mt-4">
+          <div id="bestseller">
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="./happyCowIceCreamCompany.js"></script>
 </body>
 </html>
